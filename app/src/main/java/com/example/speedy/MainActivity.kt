@@ -7,7 +7,7 @@ import android.renderscript.ScriptGroup.Binding
 import android.view.inputmethod.InputBinding
 import com.example.speedy.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity()
+class PantallaPrincipal : AppCompatActivity()
 {
 
     private lateinit var binding: ActivityMainBinding

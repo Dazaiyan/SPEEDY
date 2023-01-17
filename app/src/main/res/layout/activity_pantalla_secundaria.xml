@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:gravity="top|center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".PantallaSecundaria">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BMI Calculator"
+        android:text="BMR Calculator"
         style = "@android:style/TextAppearance.Material.Headline"
         android:padding="30dp" />
 
@@ -29,7 +29,7 @@
             android:textSize="20sp" />
 
         <NumberPicker
-            android:id="@+id/heightPicker"
+            android:id="@+id/heightPicker2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp" />
@@ -49,15 +49,41 @@
             android:textSize="20sp" />
 
         <NumberPicker
-            android:id="@+id/weightPicker"
+            android:id="@+id/weightPicker2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp" />
 
         <TextView
+            android:id="@+id/resultsTV2"
+            style="@android:style/TextAppearance.Material.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="kg" />
+            android:padding="10dp"
+            android:text="kg"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/AgePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp" />
+
 
     </LinearLayout>
 
@@ -66,6 +92,7 @@
         style="@android:style/TextAppearance.Material.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:padding="10dp" />
 
     <TextView
@@ -75,8 +102,4 @@
         android:layout_height="wrap_content"
         android:baselineAligned="false"
         android:padding="10dp" />
-
 </LinearLayout>
-
-
-
